@@ -1,9 +1,31 @@
-h1 {text-align: center;
+html {
+    background-color: rgb(41, 40, 59);
 }
 
+h1 {text-align: center;
+    font-size: 45px;
+    border: 5px solid #000;
+    border-style: dotted;
+    border-right: 5px solid;
+    border-left: 5px solid;
+    text-shadow: 3px 3px #b9b9bd; 
+    background-color: rgb(123, 161, 194);
+}
+
+h3 {
+    border: 3px solid #000;
+    border-style: double;
+    border-color: orange;
+    padding: 10px;
+    width: fit-content;
+    font-family: sans-serif;
+    color: skyblue;
+}
 
 p {margin-left: 50px;
-    font-size: 18px;}
+    font-size: 18px;
+    font-family: monospace;
+    color: #b9b9bd;}
 
 input {display: flex;
     height: 14px;
@@ -11,11 +33,35 @@ input {display: flex;
     float: left;
     margin-right: 10px;
     margin-top: 4px;
-    border-radius: 50%;}
+    border-radius: 50%;
+    accent-color: midnightblue}
+
+input:hover{
+    box-shadow: -4px 0px black;
+}
+
+p:hover {
+    background-image: linear-gradient(to right, rgb(119, 121, 138), rgb(44, 45, 56));
+    padding: 5px;
+    width: fit-content;
+    color: azure;
+    font-weight: bolder;
+    box-shadow: 2px 2px black;
+}
 
 span {
     margin-left: 50px;
     float: center;
+}
+
+span[name="correct"] {
+    color: rgb(6, 181, 6);
+    font-weight: bold;
+}
+
+span[name="incorrect"] {
+    color: rgb(250, 7, 7);
+    font-weight: bold;
 }
 
 .hide {
